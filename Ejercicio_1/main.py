@@ -1,8 +1,7 @@
 from HanoiVisualizer import HanoiVisualizer
 from HanoiCalculator import HanoiCalculator
 
-def main():
-    num_blocks = 5  # Cambia este valor para probar
+def main(num_blocks):  # Cambia este valor para probar
     if num_blocks <= 24:
         visualizer = HanoiVisualizer(num_blocks)
         visualizer.run()
@@ -11,4 +10,4 @@ def main():
         visualizer.show_result()
 
 if __name__ == "__main__":
-    main()
+    main(int(input("Número de bloques: ")))
