@@ -1,7 +1,7 @@
 from HanoiVisualizer import HanoiVisualizer
 from HanoiCalculator import HanoiCalculator
 
-def main(num_blocks):  # Cambia este valor para probar
+def main(num_blocks = 5):  # Cambia este valor para probar
     if num_blocks <= 24:
         visualizer = HanoiVisualizer(num_blocks)
         visualizer.run()
